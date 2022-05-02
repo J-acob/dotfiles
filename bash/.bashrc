@@ -5,3 +5,6 @@ export PATH="$HOME/bin:$PATH"
 
 #How to alias shell scripts well...?
 alias helpme="~/bin/.scripts/helpme.sh"
+
+alias helpssh="~/bin/.scripts/helpssh.sh"
+
