@@ -24,8 +24,6 @@ export LANG="en_US.UTF-8"
 
 #Modularization of bash prompt stuff
 
-
-
 directory_info="\[\033[38;5;228m\][\w]\[$(tput sgr0)\]"
 user_info="\[\033[38;5;183m\]\u\[$(tput sgr0)\]"
 time_info="\[\033[38;5;6m\]\A\[$(tput sgr0)\]"
@@ -36,3 +34,5 @@ git_info="\[\033[38;5;94m\]\$(git status 2>/dev/null | grep 'On branch' | sed 's
 export PS1="${user_info}\[\033[38;5;231m\]@${host_info} ${directory_info} ${git_info} \[$(tput sgr0)\]\$ "
 export EDITOR="vim"
 export SVN_EDITOR="vim"
+ 
+shopt -s globstar
