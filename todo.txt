@@ -1,0 +1,10 @@
+
+
+==TODO==
+
+--Configure bash shell more
+--Configure fish shell? Eh. Maybe not. if it aint broke...
+-- Get task warrior and use some integration tooling...
+-- Make a setup.sh script to instantly install all the dependencies of the stuff I use
+  Then, likely somehow use a distro-checker to make it work anywhere
+

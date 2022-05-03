@@ -41,7 +41,8 @@ set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
 
-
+"Make mouse behavior better
+set mouse=a
 
 " Put all temporary files under the same directory.
 "" https://github.com/mhinz/vim-galore#temporary-files

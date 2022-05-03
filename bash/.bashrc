@@ -11,7 +11,9 @@ alias helpssh="~/bin/.scripts/helpssh.sh"
 #I want to be able to edit my commonly opened files easily
 alias vimrc="vim ~/.vimrc"
 alias bashrc="vim ~/.bashrc"
+alias tmuxconf="vim ~/.tmux.conf"
 alias loadbash="source ~/.bash_profile"
+
 
 #Color stuff.. hmm
 export CLICOLOR=1
