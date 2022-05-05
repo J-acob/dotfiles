@@ -13,6 +13,8 @@ alias bashrc="vim ~/.bashrc"
 alias tmuxconf="vim ~/.tmux.conf"
 alias loadbash="source ~/.bash_profile"
 
+#Easily open up the explorer from the cli (for WSL/WSL2) 
+alias explorer="explorer.exe `wslpath -w "$PWD"`"
 
 #Color stuff.. hmm
 export CLICOLOR=1
@@ -35,5 +37,12 @@ git_info="\[\033[38;5;94m\]\$(git status 2>/dev/null | grep 'On branch' | sed 's
 export PS1="${user_info}\[\033[38;5;231m\]@${host_info} ${directory_info} ${git_info}\[$(tput sgr0)\]\$ "
 export EDITOR="vim"
 export SVN_EDITOR="vim"
- 
+
+
+#File searching helper, need to research it more
 shopt -s globstar
+
+# WRITING SPECIFIC STUFF GOES HERE!
+
+#Need to put the latex pdf rendering stuff onto the path.
+export PATH=/Library/TeX/texbin:$PATH
