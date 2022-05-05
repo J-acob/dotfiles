@@ -1,7 +1,14 @@
 " We want vim
 set nocompatible
 
-syntax off
+"I like colors
+set t_Co=256
+
+"Make background dark
+set background=dark
+
+" Enable syntax highlighting
+syntax on
 
 " Indent stuff
 set autoindent             " Indent according to previous line.
@@ -66,3 +73,26 @@ inoremap ` ``<Esc>ha
 
 "Make it so we can wrap visual selections with stuff
 vnoremap <leader>s xi()<Esc>P)
+
+
+"Plugins... sigh
+
+call plug#begin('~/.vim/plugged')
+" Declare the list of plugins.
+
+" Airline for easy information about what I'm editing
+Plug 'vim-airline/vim-airline'
+
+" Gruvbox is a pretty cool colorscheme!
+Plug 'https://github.com/morhetz/gruvbox.git'
+
+" Home menu for vim. makes me feel at home. :)
+Plug 'mhinz/vim-startify'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+" Setting colorscheme
+colorscheme gruvbox
+
+
