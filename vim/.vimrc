@@ -55,3 +55,14 @@ set mouse=a
 "set undofile
 "set undodir     =$HOME/.vim/files/undo/
 "set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+
+"Automatic brace matching
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
+
+"Make it so we can wrap visual selections with stuff
+vnoremap <leader>s xi()<Esc>P)
