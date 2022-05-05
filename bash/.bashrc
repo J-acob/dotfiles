@@ -32,7 +32,7 @@ host_info="\[\033[38;5;226m\]\h\[$(tput sgr0)\]"
 git_info="\[\033[38;5;94m\]\$(git status 2>/dev/null | grep 'On branch' | sed 's/On branch / \[\033[38;5;94m\]~ \[\033[38;5;70m\]/')"
 
 
-export PS1="${user_info}\[\033[38;5;231m\]@${host_info} ${directory_info} ${git_info}\[$(tput sgr0)\]\$ "
+export PS1="${user_info}\[\033[38;5;231m\]@${host_info} ${directory_info}${git_info}\[$(tput sgr0)\] \$ "
 export EDITOR="vim"
 export SVN_EDITOR="vim"
  
