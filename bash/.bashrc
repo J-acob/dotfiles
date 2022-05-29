@@ -13,6 +13,8 @@ alias bashrc="vim ~/.bashrc"
 alias tmuxconf="vim ~/.tmux.conf"
 alias loadbash="source ~/.bash_profile"
 
+#Open my vimwiki with EASE
+alias vimwiki="vim ~/vimwiki/index.wiki"
 
 #Color stuff.. hmm
 export CLICOLOR=1
@@ -31,9 +33,11 @@ time_info="\[\033[38;5;6m\]\A\[$(tput sgr0)\]"
 host_info="\[\033[38;5;226m\]\h\[$(tput sgr0)\]"
 git_info="\[\033[38;5;94m\]\$(git status 2>/dev/null | grep 'On branch' | sed 's/On branch / \[\033[38;5;94m\]~ \[\033[38;5;70m\]/')"
 
-
+#PS1 Stuff
 export PS1="${user_info}\[\033[38;5;231m\]@${host_info} ${directory_info}${git_info}\[$(tput sgr0)\] \$ "
 export EDITOR="vim"
 export SVN_EDITOR="vim"
  
 shopt -s globstar
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

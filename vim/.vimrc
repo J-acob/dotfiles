@@ -10,6 +10,12 @@ set background=dark
 " Enable syntax highlighting
 syntax on
 
+" Allow for filetypes to be changed with plugins?
+filetype plugin on
+
+" Map leader key to something less inane
+let mapleader  = "`"
+
 " Indent stuff
 set autoindent             " Indent according to previous line.
 set expandtab              " Use spaces instead of tabs.
@@ -88,6 +94,9 @@ Plug 'https://github.com/morhetz/gruvbox.git'
 
 " Home menu for vim. makes me feel at home. :)
 Plug 'mhinz/vim-startify'
+
+" Vimwiki for note taking when I need it.
+Plug 'vimwiki/vimwiki'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
