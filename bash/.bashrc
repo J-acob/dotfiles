@@ -4,7 +4,6 @@ export PATH="$HOME/bin:$PATH"
 
 #How to alias shell scripts well...?
 alias helpme="~/bin/.scripts/helpme.sh"
-
 alias helpssh="~/bin/.scripts/helpssh.sh"
 
 #I want to be able to edit my commonly opened files easily
@@ -37,3 +36,11 @@ export EDITOR="vim"
 export SVN_EDITOR="vim"
  
 shopt -s globstar
+
+
+# Load pyenv automatically by adding
+
+export PATH="~/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
