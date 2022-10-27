@@ -37,10 +37,3 @@ export SVN_EDITOR="vim"
  
 shopt -s globstar
 
-
-# Load pyenv automatically by adding
-
-export PATH="~/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
